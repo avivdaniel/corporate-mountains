@@ -1,0 +1,731 @@
+* {
+    box-sizing:border-box;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-size: 100%;
+}
+
+.wrapper {
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+}
+
+.content-container {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+/* section 1 */
+/* ==================================== */
+/* ==================================== */
+
+ .intro {
+     display: flex;
+     width: 100%;
+     height: 100vh;
+     max-height: 250px;   
+    background-image: url(images/background-images.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 25px;
+}
+.intro-content h1, .intro-content h2 {
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.intro-content h1 {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.64em;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 29px;
+} 
+
+.intro-content h2 {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.37em;
+}
+
+.link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+
+}
+
+.yellow-link {
+    background: #FDE500; 
+}
+
+.yellow-link a {
+padding: 14.67px 23.93px 16.13px 23.93px;
+display: block;
+color: black;
+width: 100%;
+text-decoration: none;
+font-weight: 600;
+font-size: 11px;
+line-height: 13px;
+letter-spacing: 0.37em;
+text-transform: uppercase;
+text-align: center; 
+}
+
+/* section 2 */
+/* ==================================== */
+/* ==================================== */
+
+.mountain {
+    display: flex;
+    align-items: center;
+   height: 640px;
+}
+
+.mountain .content-container {
+    width: 100%;
+}
+
+.mountain-icon {
+    padding-bottom: 83px;
+}
+
+.mountain-icon,
+.mountain-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-content {
+    max-width: 630px;
+    font-size: 16px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.inner-content p {
+    margin: 0;
+}
+
+/* section 3 */
+/* ==================================== */
+/* ==================================== */
+
+.services {
+    background: #F4F4F4;
+    text-align: center;
+}
+
+.section-description img {
+    padding-top: 84px;
+}
+.section-description h2 {
+    margin-top: 31px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 23px;
+    letter-spacing: 0.78em;
+    text-transform: uppercase;
+}
+
+.section-description p {
+    display: inline-block;
+    max-width: 764px;
+    line-height: 33px;
+    margin-top: 0;
+    margin-bottom: 79px;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+}
+
+ .services-container {
+    display:flex;
+    justify-content:space-between;
+    text-align:center;  
+ }
+
+ .service-box {
+    flex: 0 0 23%;
+    display:flex;
+    flex-direction:column; 
+ }
+
+ .service-box-header {
+    display:flex;
+    flex:1;
+    height:100%;
+    justify-content:stretch;
+    flex-direction:column;
+    background-color:#fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+ }
+
+ .service-logo {
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+.service-logo.print{
+    background-image: url(images/graphic-designer-icon.png);
+}
+
+.service-logo.design{
+    background-image: url(images/web-design-icon.png);
+}
+
+.service-logo.dev {
+background-image: url(images/web-dev-icon.png);
+}
+
+.service-logo.app {
+    background-image: url(images/app-dev-icon.png);
+}
+
+  .service-box-header h3 {
+    padding-bottom:35px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+  .service-box-header h3 span {
+    display:block;
+}
+.service-box-header p{
+    padding: 20px;
+    margin: 0;
+    font-size: 13px;    
+    line-height: 178%;
+    letter-spacing: 0.05em;     
+}
+
+  .service-footer {
+    margin-top:30px;
+    margin-bottom: 37px;
+    text-align:left;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    }
+
+  .service-footer-box span {
+    display: block;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    }
+
+.indicator {
+    position: relative;
+    width: 87%;
+    height: 5px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #F3F3F3; 
+  }
+
+   .service-footer-box span:not(:first-child) {
+      margin-top: 17px;
+  }
+
+  /* .indicator:first-of-type {
+      padding-top: 7px;
+  }  */
+
+  .service-footer-box {
+    padding-top: 7px;
+    padding-bottom: 20px;
+    }
+
+.indicator-inner {
+    position: absolute;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #FDE500;
+}
+ 
+.indicator-inner.p35 {
+    width: 83%;
+}
+
+.indicator-inner.p27 {
+    width: 84%;
+}
+
+.indicator-inner.p12 {
+    width: 91%;
+}
+
+.indicator-inner.java-indicator {
+    width: 78%;   
+}
+
+.indicator-inner.swift-indicator {
+    width: 82%;
+}
+
+/* section 4 -----------------------------*/
+
+.experiance {
+    background-color: #0B0B0B;
+    text-align: center;
+}
+
+.experiance-box {
+    background-color: white;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+
+.experiance-box span {
+    padding-bottom: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.25em;
+}
+
+.experiance-type {
+font-weight: 600;
+font-size: 13px;
+line-height: 140%;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+}
+/* section 5-----------------
+----------------------------- */
+.portfolio {
+background: #F4F4F4;
+text-align: center;
+}
+.portfolio-nav-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 106px;
+}
+
+.portfolio-nav-left,
+.portfolio-nav-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 35%;
+    margin-top: 19px;
+    margin-bottom: 12px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.portfolio-nav-link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 206%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;   
+}
+
+.portfolio-logo {
+    align-self: center;
+}
+
+.portfolio-logo img {
+    padding: 0;
+}
+
+
+.portfolio-imgs-container {
+    display: flex;
+    max-height: 200px;
+    height: 100vh;
+    margin-bottom: 91px;
+}
+
+.portfolio-img-box {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.portfolio-img-box.hands {
+    background-image: url(images/portfolio-img1.png);
+}
+
+.portfolio-img-box.buldings {
+    background-image:url(images/portfolio-img2.png);
+}
+
+.portfolio-img-box.buldings2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(images/portfolio-img3.png);
+}
+
+.inner-box-yellow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 72%;
+    background: rgba(253, 229, 0, 0.9);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inner-box-white {
+    position: absolute;
+    display:flex;
+    height:100%;
+    justify-content:stretch;
+    flex-direction:column;
+    width: 125%;
+    height: 77%;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inner-box-white h4{
+    margin: 0;
+    padding: 5px;
+    font-size: 9px;
+    line-height: 18px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.inner-box-white {
+    overflow: hidden;
+}
+.inner-box-white p{
+    margin: 0;
+    padding: 5px;
+    font-size: 8px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+}
+
+.portfolio-img-box.woman {
+    background-image:url(images/portfolio-img4.png);
+}
+
+.portfolio-img-box.kitchen {
+    background-image:url(images/portfolio-img5.png); 
+}
+
+.portfolio-img-box.television {
+    background-image:url(images/portfolio-img6.png); 
+}
+
+.link-container.portfolio-link {
+    margin-top: 0px;
+    padding-bottom: 84px;
+}
+
+/* section 6-----------------------
+---------------------------------- */
+
+.video {
+    display: flex;
+    max-height: 380px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/town-background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.link-container.video-link {
+    margin: 0;
+}
+
+.button-container.button-video a {
+    padding: 25.33px 51.62px 27.87px 51.62px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.63em;
+}
+
+/* section 7--------------------------
+----------------------------------- */
+
+.team {
+    background: #E5E5E5;
+    text-align: center;
+    padding-bottom: 53px;
+}
+
+.teambox-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.team-box {
+ display: flex;
+ flex-direction: column;
+ flex: 0 1 23%;
+ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.team-box-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 355px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.team-box-header.japanies-woman{
+    background-image: url(images/team-photo-1.png);
+}
+
+.team-box-header.indians-men{
+    background-image: url(images/team-photo-2.png);  
+}
+
+.team-box-header.japanies-woman2{
+    background-image: url(images/team-photo-3.png);
+}
+
+.team-box-header.blond-man{
+    background-image: url(images/team-photo-4.png);
+}
+
+.box-header-name {
+    background: rgba(253, 229, 0, 0.9);
+}
+
+.box-header-name span {
+display: inline-block;
+ padding: 18px 23.26px 19px 23px;
+ font-weight: 600;
+font-size: 13px;
+line-height: 140%;
+letter-spacing: 0.25em;
+}
+
+.team-box-footer {
+    flex: 1;
+    background: white;
+}
+
+.team-box-footer p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    padding: 20px;
+}
+
+/* section 8!!!! ------------------
+---------------------------------- */
+.qoutes {
+    position: relative;
+    background: #E5E5E5;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.qoutes:before{
+    position: absolute; 
+    content: "";
+    width: 100%;
+    height: 30%;
+    top: 46%;
+    left: 0;
+    transform: translateY(-50%);
+    background: rgba(253, 229, 0, 1);
+}
+
+.qoutes-content-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.qoutes-content-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 48%;
+}
+.qoutes-content-box.right-box {
+    justify-content: space-between;
+}
+
+.big-inner-box.left-box {
+    color: white;
+    background: black; 
+}
+
+.big-inner-box.left-box p {
+    padding: 53px 74px 67px 74px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.small-inner-box {
+    font-size: 13px;
+    line-height: 206%;
+    letter-spacing: 0.05em;
+}
+
+.small-inner-box.left-box p {
+    margin: 0;
+    padding: 53px 74px 67px 74px;
+}
+
+.small-inner-box p > span {
+display: block;
+margin-top: 5px;
+font-style: italic;
+font-weight: 600;
+font-size: 13px;
+line-height: 206%;
+letter-spacing: 0.05em;
+}
+
+.small-inner-box.left-box p > span {
+    text-align: left;
+}
+
+.small-inner-box.right-box p {
+    margin: 0;
+    padding: 53px 74px 67px 74px;
+}
+
+.small-inner-box.right-box p > span {
+    text-align: right;
+}
+
+.big-inner-box.right-box {
+    max-height: 375px;
+    height: 100vh;
+    background-image: url(images/team-content-blackwhite.png);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* footer here-------------------------
+------------------------------- */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.footer-content {
+    display: flex; 
+    padding-top: 39px; 
+}
+
+.branding,
+.footer-content {
+    flex: 0 0 43%;
+}
+
+.branding {
+    max-width: 370px;
+}
+
+.branding img {
+    margin-bottom: 10px;
+}
+.branding p{
+margin: 0;
+padding-right: 25px;
+font-size: 13px;
+line-height: 206%;
+letter-spacing: 0.05em;
+}
+
+
+.footer-links {
+    flex: 0 0 18%;
+    max-width: 135px;
+}
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-link a {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 250%;
+    letter-spacing: 0.05em;
+    color: white;
+}
+.footer-link a:visited {
+    color: white;
+}
+.footer-social {
+    padding-top: 25px;
+}
+
+.footer-contact p{
+padding-right: 45px;
+font-size: 13px;
+line-height: 206%;
+letter-spacing: 0.05em;
+}
+
+.footer-social a{
+    padding: 0 3px;
+}
+
+.yellow-link.footer-link {
+    border-radius: 25px;
+    width: 100%; 
+}
+
+.yellow-link.footer-link a{
+color: black;
+padding: 3px;
+text-transform: lowercase;
+}
